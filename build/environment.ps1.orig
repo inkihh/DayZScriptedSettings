@@ -1,0 +1,73 @@
+#
+# Copy this to environment.ps1
+# 
+# environment.ps1 will never be committed to the Git, because it may
+# mess with someone else's local environment.ps1. If you need to 
+# delete your local clone of the repository, you may want to copy
+# your local environment.ps1 to a safe place, for example Google Drive.
+#
+# Only parameter that aren't self explanatory have an explanation.
+#
+
+$env_modname="RaceLine"
+$env_modpath="P:\ModPath\RaceLine"
+
+#
+# This has to match the password in config/dev.cfg
+#
+$env_password="inkihh"
+
+$env_playername="inkihh"
+$env_modlist=@("@VPPAdminTools", "@Dabs Framework", "@CF")
+$env_dayzclientpath="C:\Program Files (x86)\Steam\steamapps\common\DayZ"
+
+#
+# Depending on how you usually start DayZ, this has to be !dzsal or !Workshop
+#
+$env_dayzclientmods="C:\Program Files (x86)\Steam\steamapps\common\DayZ\!dzsal"
+
+$env_dayzserverpath="C:\Program Files (x86)\Steam\steamapps\common\DayZServer"
+$env_buildpath="P:\mods\build"
+
+#
+# This is the full path to the key files. The last bit is already a part of
+# the filename. In this case, there's [..]\dayztools\keys\inkihh\inkihh.bikey
+# and [..]\dayztools\keys\inkihh\inkihh.biprivatekey
+#
+$env_keypath="C:\Users\ingma\Documents\Github\dayztools\keys\inkihh\inkihh"
+
+#
+# $PSScriptRoot is automatically filled with the path to the folder
+# where build.ps1 is located
+#
+$env_clientprofile="$PSScriptRoot\profile\client"
+$env_serverprofile="$PSScriptRoot\profile\server"
+$env_serverconfig="$PSScriptRoot\config\dev.cfg"
+
+$env_pboproject="C:\Program Files (x86)\Mikero\DePboTools\bin\PboProject.exe"
+$env_makepbo="C:\Program Files (x86)\Mikero\DePboTools\bin\MakePbo.exe"
+$env_sign="C:\Program Files (x86)\Steam\steamapps\common\DayZ Tools\Bin\DsUtils\DSsignfile.exe"
+
+#
+# This is where your serverside mods reside. Note that there needs to be
+# a Addons folder which contains the actual pbos.
+$env_serverside="P:\mods\serverside"
+
+#
+# This determines if the final mod buildpath will be appended to -mod or to -serverside
+#
+$env_isserverside=0
+
+$env_dowipe=0
+$env_dopack=1
+
+#
+# pboproject or makepbo
+#
+$env_packmethod="pboproject"
+
+$env_dosign=1
+$env_dokillserver=1
+$env_dokillclient=1
+$env_dostartserver=1
+$env_dostartclient=1
