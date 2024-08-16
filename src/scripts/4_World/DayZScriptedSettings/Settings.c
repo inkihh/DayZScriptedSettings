@@ -5,6 +5,24 @@ class DayZScriptedSettings_Settings
 
 	int remove_predator_meat_poisoning = 0;
 
+	// FutureSixx Addons
+	
+	bool EnableLeaningWhileSprinting = false;
+	bool EnableGasMaskOnlyContaminatedAreas = false;
+
+	// Vehicle Stuff
+	bool EnableNVGsInVehicle = false;
+	float VehicleCE_FuelMinSpawn = 0.25;
+	float VehicleCE_FuelMaxSpawn = 0.75;
+	float VehicleCE_CoolantMinSpawn = 0.5;
+	float VehicleCE_CoolantMaxSpawn = 1.0;
+
+	// ItemBase Stuff
+	bool DisableItemsInCargoDamage = false;
+	bool DisableAttachmentItemsDamage = false;
+
+	// End of FutureSixx Addons
+
 	[NonSerialized()]
 	protected bool m_IsLoaded;
 
