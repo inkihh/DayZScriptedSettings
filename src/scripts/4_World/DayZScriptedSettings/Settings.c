@@ -3,6 +3,8 @@ class DayZScriptedSettings_Settings
 	int debug_log_level = 1;
 	int environment = 1;
 
+	int remove_predator_meat_poisoning = 0;
+
 	[NonSerialized()]
 	protected bool m_IsLoaded;
 
@@ -13,7 +15,7 @@ class DayZScriptedSettings_Settings
 	{
 		if(GetGame().IsClient()) return;
 
-		string ConfigurationPath = "$profile:ModPath";
+		string ConfigurationPath = "$profile:DayZScriptedSettings";
 		MakeDirectory(ConfigurationPath);
 
 		m_ConfigurationFile = ConfigurationPath + "/DayZScriptedSettings.json";

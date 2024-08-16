@@ -24,7 +24,7 @@ class CfgMods
 		hidePicture = 0;
 		name = "DayZScriptedSettings";
 		credits = "";
-		author = "inkihh";
+		author = "inkihh,FutureSixx";
 		authorID = "0";
 		version = "1";
 		extra = 0;
