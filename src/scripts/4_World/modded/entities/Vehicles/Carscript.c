@@ -1,5 +1,6 @@
 modded class CarScript extends Car {
-    override void EEOnCECreate() {
+    override void EEOnCECreate()
+	{
         float fuelMin = DayZScriptedSettings_App.GetInstance().m_Settings.VehicleCE_FuelMinSpawn;
         float fuelMax = DayZScriptedSettings_App.GetInstance().m_Settings.VehicleCE_FuelMaxSpawn;
 
