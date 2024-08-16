@@ -3,15 +3,15 @@ class DayZScriptedSettings_Settings
 	int debug_log_level = 1;
 	int environment = 1;
 
-	int RemovePredatorMeatPoisoning = false;
-	int CanToggleNvgInVehicle = false;
-	int DisablePlayerRestraining = false;
+	bool RemovePredatorMeatPoisoning = false;
+	bool DisablePlayerRestraining = false;
 
 	// FutureSixx Addons
 	bool EnableLeaningWhileSprinting = false;
 	bool EnableGasMaskOnlyContaminatedAreas = false;
 
 	// Vehicle Stuff
+	bool VehicleCE_CanToggleNvgInVehicle = false;
 	float VehicleCE_FuelMinSpawn = 0.25;
 	float VehicleCE_FuelMaxSpawn = 0.75;
 	float VehicleCE_CoolantMinSpawn = 0.5;
