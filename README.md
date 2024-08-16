@@ -9,7 +9,7 @@ A collection of settings that have to be done via scripting.
 {
     "debug_log_level": 1,
     "environment": 1,
-    "remove_predator_meat_poisoning": 1
+    "RemovePredatorMeatPoisoning": 1
 }
 ```
 

@@ -5,13 +5,13 @@ modded class BearSteakMeat
 		int mask1 = eAgents.SALMONELLA|eAgents.BRAIN|eAgents.HEAVYMETAL;
 		int mask2 = eAgents.SALMONELLA|eAgents.HEAVYMETAL;
 
-		if(!DayZScriptedSettings_App.GetInstance().m_Settings.remove_predator_meat_poisoning || DayZScriptedSettings_App.GetInstance().m_Settings.remove_predator_meat_poisoning == 0)
+		if(!DayZScriptedSettings_App.GetInstance().m_Settings.RemovePredatorMeatPoisoning || DayZScriptedSettings_App.GetInstance().m_Settings.RemovePredatorMeatPoisoning == 0)
 		{
-			DayZScriptedSettings_App.GetInstance().m_Logger.Log("[BearSteakMeat.HandleFoodStageChangeAgents] remove_predator_meat_poisoning nonexistant or 0, using vanilla behavior");
+			DayZScriptedSettings_App.GetInstance().m_Logger.Log("[BearSteakMeat.HandleFoodStageChangeAgents] RemovePredatorMeatPoisoning nonexistant or 0, using vanilla behavior");
 		}
 		else
 		{
-			DayZScriptedSettings_App.GetInstance().m_Logger.Log("[BearSteakMeat.HandleFoodStageChangeAgents] remove_predator_meat_poisoning!=0, using custom behavior");
+			DayZScriptedSettings_App.GetInstance().m_Logger.Log("[BearSteakMeat.HandleFoodStageChangeAgents] RemovePredatorMeatPoisoning!=0, using custom behavior");
 			mask1 = eAgents.SALMONELLA|eAgents.BRAIN;
 			mask2 = eAgents.SALMONELLA;
 		}
@@ -38,13 +38,13 @@ modded class WolfSteakMeat
 		int mask1 = eAgents.SALMONELLA|eAgents.BRAIN|eAgents.HEAVYMETAL;
 		int mask2 = eAgents.SALMONELLA|eAgents.HEAVYMETAL;
 
-		if(!DayZScriptedSettings_App.GetInstance().m_Settings.remove_predator_meat_poisoning || DayZScriptedSettings_App.GetInstance().m_Settings.remove_predator_meat_poisoning == 0)
+		if(!DayZScriptedSettings_App.GetInstance().m_Settings.RemovePredatorMeatPoisoning || DayZScriptedSettings_App.GetInstance().m_Settings.RemovePredatorMeatPoisoning == 0)
 		{
-			DayZScriptedSettings_App.GetInstance().m_Logger.Log("[WolfSteakMeat.HandleFoodStageChangeAgents] remove_predator_meat_poisoning nonexistant or 0, using vanilla behavior");
+			DayZScriptedSettings_App.GetInstance().m_Logger.Log("[WolfSteakMeat.HandleFoodStageChangeAgents] RemovePredatorMeatPoisoning nonexistant or 0, using vanilla behavior");
 		}
 		else
 		{
-			DayZScriptedSettings_App.GetInstance().m_Logger.Log("[WolfSteakMeat.HandleFoodStageChangeAgents] remove_predator_meat_poisoning!=0, using custom behavior");
+			DayZScriptedSettings_App.GetInstance().m_Logger.Log("[WolfSteakMeat.HandleFoodStageChangeAgents] RemovePredatorMeatPoisoning!=0, using custom behavior");
 			mask1 = eAgents.SALMONELLA|eAgents.BRAIN;
 			mask2 = eAgents.SALMONELLA;
 		}

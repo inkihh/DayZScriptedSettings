@@ -3,9 +3,9 @@ class DayZScriptedSettings_Settings
 	int debug_log_level = 1;
 	int environment = 1;
 
-	int remove_predator_meat_poisoning = 0;
-	int can_toggle_nvg_in_vehicle = 0;
-	int disable_player_restraining = 0;
+	int RemovePredatorMeatPoisoning = 0;
+	int CanToggleNvgInVehicle = 0;
+	int DisablePlayerRestraining = 0;
 
 	// FutureSixx Addons
 	
